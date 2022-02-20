@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dfx": "0.8.4",
+  "canisters": {
+    "LucasSite": {
+      "type": "motoko",
+      "main": "src/LucasSite/main.mo"
+    },
+    "LucasSite_assets": {
+      "type": "assets",
+      "source": [
+        "src/LucasSite_assets/assets"
+      ],
+      "dependencies": [
+        "LucasSite"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
